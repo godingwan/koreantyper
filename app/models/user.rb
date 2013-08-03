@@ -13,6 +13,8 @@ class User < ActiveRecord::Base
 
   validates_presence_of :username
 
+  has_many :race_passages, through: :race
+
   def self.find_first_by_auth_conditions(warden_conditions)
     conditions = warden_conditions.dup
     if login = conditions.delete(:login)

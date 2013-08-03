@@ -3,6 +3,10 @@ Koreantyper::Application.routes.draw do
 
   root :to => 'welcome#index'
 
+  resources :races, only: [:new, :create]
+
+  resources :passages, only: [:show]
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
