@@ -27,6 +27,8 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'pry-rails'
   gem 'shoulda-matchers'
+  gem 'konacha'
+  gem 'ejs'
 end
 
 group :test do
